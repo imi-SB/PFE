@@ -1,0 +1,220 @@
+============================================================
+GÉNÉRATION DU BOM - ANALYSE DES FICHIERS
+============================================================
+
+============================================================
+FICHIER: tree_data.xlsx
+Chemin: c:\Users\Administrateur\Desktop\PFE\tree_data.xlsx
+Existe: True
+============================================================
+Feuilles: ['Arborescence Pièces']
+
+--- Feuille: Arborescence Pièces ---
+Shape: (849, 4)
+ERREUR: 'charmap' codec can't encode character '\U0001f4cd' in position 12: character maps to <undefined>
+
+============================================================
+FICHIER: PMP 2022
+Chemin: c:\Users\Administrateur\Desktop\PFE\PMP 2022 (1).xls
+Existe: True
+============================================================
+Feuilles: ['Feuil2', '250 H', '500 H', '750 H', '1000 H', 'checklist weekly conducteur', 'Feuil9', 'Feuil11']
+
+--- Feuille: Feuil2 ---
+Shape: (118, 65)
+Colonnes: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22', 'Unnamed: 23', 'Unnamed: 24', 'Unnamed: 25', 'Unnamed: 26', 'Unnamed: 27', 'Unnamed: 28', 'Unnamed: 29', 'Unnamed: 30', 'Unnamed: 31', 'Unnamed: 32', 'Unnamed: 33', 'Unnamed: 34', 'Unnamed: 35', 'Unnamed: 36', 'Unnamed: 37', 'Unnamed: 38', 'Unnamed: 39', 'Unnamed: 40', 'Unnamed: 41', 'Unnamed: 42', 'Unnamed: 43', 'Unnamed: 44', 'Unnamed: 45', 'Unnamed: 46', 'Unnamed: 47', 'Unnamed: 48', 'Unnamed: 49', 'Unnamed: 50', 'Unnamed: 51', 'Unnamed: 52', 'Unnamed: 53', 'Unnamed: 54', 'Unnamed: 55', 'Unnamed: 56', 'Unnamed: 57', 'Unnamed: 58', 'Unnamed: 59', 'Unnamed: 60', 'Unnamed: 61', 'Unnamed: 62', 'Unnamed: 63', 'Unnamed: 64']
+
+Types:
+Unnamed: 0     float64
+Unnamed: 1         str
+Unnamed: 2         str
+Unnamed: 3      object
+Unnamed: 4      object
+                ...   
+Unnamed: 60     object
+Unnamed: 61     object
+Unnamed: 62     object
+Unnamed: 63     object
+Unnamed: 64    float64
+Length: 65, dtype: object
+
+Aperçu (3 premières lignes):
+   Unnamed: 0       Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4 Unnamed: 5 Unnamed: 6 Unnamed: 7 Unnamed: 8  Unnamed: 9 Unnamed: 10 Unnamed: 11 Unnamed: 12  Unnamed: 13 Unnamed: 14 Unnamed: 15  Unnamed: 16 Unnamed: 17 Unnamed: 18 Unnamed: 19 Unnamed: 20 Unnamed: 21 Unnamed: 22  Unnamed: 23 Unnamed: 24 Unnamed: 25 Unnamed: 26 Unnamed: 27 Unnamed: 28 Unnamed: 29  Unnamed: 30 Unnamed: 31 Unnamed: 32 Unnamed: 33 Unnamed: 34 Unnamed: 35 Unnamed: 36  Unnamed: 37 Unnamed: 38 Unnamed: 39 Unnamed: 40 Unnamed: 41 Unnamed: 42 Unnamed: 43  Unnamed: 44 Unnamed: 45 Unnamed: 46 Unnamed: 47 Unnamed: 48 Unnamed: 49 Unnamed: 50                     Unnamed: 51 Unnamed: 52 Unnamed: 53 Unnamed: 54 Unnamed: 55 Unnamed: 56  Unnamed: 57  Unnamed: 58 Unnamed: 59 Unnamed: 60 Unnamed: 61 Unnamed: 62 Unnamed: 63  Unnamed: 64
+0         NaN  CL.USINE MEKNES        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN  MT 08 EN 53         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN                         Page: 1         NaN         NaN         NaN         NaN         NaN          NaN          NaN         NaN         NaN         NaN         NaN         NaN          NaN
+1         NaN              NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN                     Version : A         NaN         NaN         NaN         NaN         NaN          NaN          NaN         NaN         NaN         NaN         NaN         NaN          NaN
+2         NaN              NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN  Date d'application: 01/02/2022         NaN         NaN         NaN         NaN         NaN          NaN          NaN         NaN         NaN         NaN         NaN         NaN          NaN
+
+--- Feuille: 250 H ---
+Shape: (221, 23)
+Colonnes: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Checklist', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22']
+
+Types:
+Unnamed: 0         str
+Unnamed: 1         str
+Unnamed: 2         str
+Unnamed: 3         str
+Checklist          str
+Unnamed: 5      object
+Unnamed: 6         str
+Unnamed: 7         str
+Unnamed: 8      object
+Unnamed: 9      object
+Unnamed: 10        str
+Unnamed: 11        str
+Unnamed: 12     object
+Unnamed: 13     object
+Unnamed: 14    float64
+Unnamed: 15        str
+Unnamed: 16        str
+Unnamed: 17    float64
+Unnamed: 18    float64
+Unnamed: 19    float64
+Unnamed: 20    float64
+Unnamed: 21    float64
+Unnamed: 22        str
+dtype: object
+
+Aperçu (3 premières lignes):
+              Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3 Checklist  Unnamed: 5 Unnamed: 6 Unnamed: 7 Unnamed: 8 Unnamed: 9        Unnamed: 10 Unnamed: 11                                       Unnamed: 12 Unnamed: 13  Unnamed: 14 Unnamed: 15 Unnamed: 16  Unnamed: 17  Unnamed: 18  Unnamed: 19  Unnamed: 20  Unnamed: 21 Unnamed: 22
+0                    NaN        NaN        NaN        NaN       NaN         NaN        NaN        NaN        NaN        NaN                NaN         NaN                                               NaN         NaN          NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN         NaN
+1  Numéro du Work Order:        NaN        NaN        NaN       NaN  S000344759        NaN        NaN        NaN        NaN       Site Client:         NaN  [MAC-CENTRALE  ELJ] Centrale Laitiere, Al Jadida         NaN          NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN         NaN
+2   Numéro du WO Parent:        NaN        NaN        NaN       NaN         NaN        NaN        NaN        NaN        NaN  Ligne et Machine:         NaN             MAC-CENTRALE  ELJ-LN 14 \ 63153/00229         NaN          NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN         NaN
+
+============================================================
+FICHIER: PMP PLF 2021
+Chemin: c:\Users\Administrateur\Desktop\PFE\PMP Condit PLF 2021 (1).xlsx
+Existe: True
+============================================================
+Feuilles: ['Feuil1', 'Feuil2']
+
+--- Feuille: Feuil1 ---
+Shape: (24, 365)
+Colonnes: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22', 'Unnamed: 23', 'Unnamed: 24', 'Unnamed: 25', 'Unnamed: 26', 'Unnamed: 27', 'Unnamed: 28', 'Unnamed: 29', 'Unnamed: 30', 'Unnamed: 31', 'Unnamed: 32', 'Unnamed: 33', 'Unnamed: 34', 'Unnamed: 35', 'Unnamed: 36', 'Unnamed: 37', 'Unnamed: 38', 'Unnamed: 39', 'Unnamed: 40', 'Unnamed: 41', 'Unnamed: 42', 'Unnamed: 43', 'Unnamed: 44', 'Unnamed: 45', 'Unnamed: 46', 'Unnamed: 47', 'Unnamed: 48', 'Unnamed: 49', 'Unnamed: 50', 'Unnamed: 51', 'Unnamed: 52', 'Unnamed: 53', 'Unnamed: 54', 'Unnamed: 55', 'Unnamed: 56', 'Unnamed: 57', 'Unnamed: 58', 'Unnamed: 59', 'Unnamed: 60', 'Unnamed: 61', 'Unnamed: 62', 'Unnamed: 63', 'Unnamed: 64', 'Unnamed: 65', 'Unnamed: 66', 'Unnamed: 67', 'Unnamed: 68', 'Unnamed: 69', 'Unnamed: 70', 'Unnamed: 71', 'Unnamed: 72', 'Unnamed: 73', 'Unnamed: 74', 'Unnamed: 75', 'Unnamed: 76', 'Unnamed: 77', 'Unnamed: 78', 'Unnamed: 79', 'Unnamed: 80', 'Unnamed: 81', 'Unnamed: 82', 'Unnamed: 83', 'Unnamed: 84', 'Unnamed: 85', 'Unnamed: 86', 'Unnamed: 87', 'Unnamed: 88', 'Unnamed: 89', 'Unnamed: 90', 'Unnamed: 91', 'Unnamed: 92', 'Unnamed: 93', 'Unnamed: 94', 'Unnamed: 95', 'Unnamed: 96', 'Unnamed: 97', 'Unnamed: 98', 'Unnamed: 99', 'Unnamed: 100', 'Unnamed: 101', 'Unnamed: 102', 'Unnamed: 103', 'Unnamed: 104', 'Unnamed: 105', 'Unnamed: 106', 'Unnamed: 107', 'Unnamed: 108', 'Unnamed: 109', 'Unnamed: 110', 'Unnamed: 111', 'Unnamed: 112', 'Unnamed: 113', 'Unnamed: 114', 'Unnamed: 115', 'Unnamed: 116', 'Unnamed: 117', 'Unnamed: 118', 'Unnamed: 119', 'Unnamed: 120', 'Unnamed: 121', 'Unnamed: 122', 'Unnamed: 123', 'Unnamed: 124', 'Unnamed: 125', 'Unnamed: 126', 'Unnamed: 127', 'Unnamed: 128', 'Unnamed: 129', 'Unnamed: 130', 'Unnamed: 131', 'Unnamed: 132', 'Unnamed: 133', 'Unnamed: 134', 'Unnamed: 135', 'Unnamed: 136', 'Unnamed: 137', 'Unnamed: 138', 'Unnamed: 139', 'Unnamed: 140', 'Unnamed: 141', 'Unnamed: 142', 'Unnamed: 143', 'Unnamed: 144', 'Unnamed: 145', 'Unnamed: 146', 'Unnamed: 147', 'Unnamed: 148', 'Unnamed: 149', 'Unnamed: 150', 'Unnamed: 151', 'Unnamed: 152', 'Unnamed: 153', 'Unnamed: 154', 'Unnamed: 155', 'Unnamed: 156', 'Unnamed: 157', 'Unnamed: 158', 'Unnamed: 159', 'Unnamed: 160', 'Unnamed: 161', 'Unnamed: 162', 'Unnamed: 163', 'Unnamed: 164', 'Unnamed: 165', 'Unnamed: 166', 'Unnamed: 167', 'Unnamed: 168', 'Unnamed: 169', 'Unnamed: 170', 'Unnamed: 171', 'Unnamed: 172', 'Unnamed: 173', 'Unnamed: 174', 'Unnamed: 175', 'Unnamed: 176', 'Unnamed: 177', 'Unnamed: 178', 'Unnamed: 179', 'Unnamed: 180', 'Unnamed: 181', 'Unnamed: 182', 'Unnamed: 183', 'Unnamed: 184', 'Unnamed: 185', 'Unnamed: 186', 'Unnamed: 187', 'Unnamed: 188', 'Unnamed: 189', 'Unnamed: 190', 'Unnamed: 191', 'Unnamed: 192', 'Unnamed: 193', 'Unnamed: 194', 'Unnamed: 195', 'Unnamed: 196', 'Unnamed: 197', 'Unnamed: 198', 'Unnamed: 199', 'Unnamed: 200', 'Unnamed: 201', 'Unnamed: 202', 'Unnamed: 203', 'Unnamed: 204', 'Unnamed: 205', 'Unnamed: 206', 'Unnamed: 207', 'Unnamed: 208', 'Unnamed: 209', 'Unnamed: 210', 'Unnamed: 211', 'Unnamed: 212', 'Unnamed: 213', 'Unnamed: 214', 'Unnamed: 215', 'Unnamed: 216', 'Unnamed: 217', 'Unnamed: 218', 'Unnamed: 219', 'Unnamed: 220', 'Unnamed: 221', 'Unnamed: 222', 'Unnamed: 223', 'Unnamed: 224', 'Unnamed: 225', 'Unnamed: 226', 'Unnamed: 227', 'Unnamed: 228', 'Unnamed: 229', 'Unnamed: 230', 'Unnamed: 231', 'Unnamed: 232', 'Unnamed: 233', 'Unnamed: 234', 'Unnamed: 235', 'Unnamed: 236', 'Unnamed: 237', 'Unnamed: 238', 'Unnamed: 239', 'Unnamed: 240', 'Unnamed: 241', 'Unnamed: 242', 'Unnamed: 243', 'Unnamed: 244', 'Unnamed: 245', 'Unnamed: 246', 'Unnamed: 247', 'Unnamed: 248', 'Unnamed: 249', 'Unnamed: 250', 'Unnamed: 251', 'Unnamed: 252', 'Unnamed: 253', 'Unnamed: 254', 'Unnamed: 255', 'Unnamed: 256', 'Unnamed: 257', 'Unnamed: 258', 'Unnamed: 259', 'Unnamed: 260', 'Unnamed: 261', 'Unnamed: 262', 'Unnamed: 263', 'Unnamed: 264', 'Unnamed: 265', 'Unnamed: 266', 'Unnamed: 267', 'Unnamed: 268', 'Unnamed: 269', 'Unnamed: 270', 'Unnamed: 271', 'Unnamed: 272', 'Unnamed: 273', 'Unnamed: 274', 'Unnamed: 275', 'Unnamed: 276', 'Unnamed: 277', 'Unnamed: 278', 'Unnamed: 279', 'Unnamed: 280', 'Unnamed: 281', 'Unnamed: 282', 'Unnamed: 283', 'Unnamed: 284', 'Unnamed: 285', 'Unnamed: 286', 'Unnamed: 287', 'Unnamed: 288', 'Unnamed: 289', 'Unnamed: 290', 'Unnamed: 291', 'Unnamed: 292', 'Unnamed: 293', 'Unnamed: 294', 'Unnamed: 295', 'Unnamed: 296', 'Unnamed: 297', 'Unnamed: 298', 'Unnamed: 299', 'Unnamed: 300', 'Unnamed: 301', 'Unnamed: 302', 'Unnamed: 303', 'Unnamed: 304', 'Unnamed: 305', 'Unnamed: 306', 'Unnamed: 307', 'Unnamed: 308', 'Unnamed: 309', 'Unnamed: 310', 'Unnamed: 311', 'Unnamed: 312', 'Unnamed: 313', 'Unnamed: 314', 'Unnamed: 315', 'Unnamed: 316', 'Unnamed: 317', 'Unnamed: 318', 'Unnamed: 319', 'Unnamed: 320', 'Unnamed: 321', 'Unnamed: 322', 'Unnamed: 323', 'Unnamed: 324', 'Unnamed: 325', 'Unnamed: 326', 'Unnamed: 327', 'Unnamed: 328', 'Unnamed: 329', 'Unnamed: 330', 'Unnamed: 331', 'Unnamed: 332', 'Unnamed: 333', 'Unnamed: 334', 'Unnamed: 335', 'Unnamed: 336', 'Unnamed: 337', 'Unnamed: 338', 'Unnamed: 339', 'Unnamed: 340', 'Unnamed: 341', 'Unnamed: 342', 'Unnamed: 343', 'Unnamed: 344', 'Unnamed: 345', 'Unnamed: 346', 'Unnamed: 347', 'Unnamed: 348', 'Unnamed: 349', 'Unnamed: 350', 'Unnamed: 351', 'Unnamed: 352', 'Unnamed: 353', 'Unnamed: 354', 'Unnamed: 355', 'Unnamed: 356', 'Unnamed: 357', 'Unnamed: 358', 'Unnamed: 359', 'Unnamed: 360', 'Unnamed: 361', 'Unnamed: 362', 'Unnamed: 363', 'Unnamed: 364']
+
+Types:
+Unnamed: 0         str
+Unnamed: 1         str
+Unnamed: 2      object
+Unnamed: 3      object
+Unnamed: 4      object
+                 ...  
+Unnamed: 360    object
+Unnamed: 361    object
+Unnamed: 362    object
+Unnamed: 363    object
+Unnamed: 364    object
+Length: 365, dtype: object
+
+Aperçu (3 premières lignes):
+         Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4 Unnamed: 5 Unnamed: 6 Unnamed: 7 Unnamed: 8 Unnamed: 9 Unnamed: 10 Unnamed: 11 Unnamed: 12 Unnamed: 13 Unnamed: 14 Unnamed: 15 Unnamed: 16  Unnamed: 17 Unnamed: 18 Unnamed: 19 Unnamed: 20 Unnamed: 21 Unnamed: 22 Unnamed: 23 Unnamed: 24 Unnamed: 25 Unnamed: 26 Unnamed: 27 Unnamed: 28 Unnamed: 29 Unnamed: 30 Unnamed: 31 Unnamed: 32 Unnamed: 33 Unnamed: 34 Unnamed: 35 Unnamed: 36 Unnamed: 37 Unnamed: 38 Unnamed: 39 Unnamed: 40 Unnamed: 41 Unnamed: 42 Unnamed: 43 Unnamed: 44 Unnamed: 45 Unnamed: 46 Unnamed: 47 Unnamed: 48 Unnamed: 49 Unnamed: 50 Unnamed: 51 Unnamed: 52 Unnamed: 53 Unnamed: 54                   Unnamed: 55 Unnamed: 56 Unnamed: 57 Unnamed: 58 Unnamed: 59 Unnamed: 60 Unnamed: 61 Unnamed: 62 Unnamed: 63 Unnamed: 64 Unnamed: 65 Unnamed: 66 Unnamed: 67 Unnamed: 68 Unnamed: 69 Unnamed: 70 Unnamed: 71 Unnamed: 72 Unnamed: 73 Unnamed: 74 Unnamed: 75 Unnamed: 76 Unnamed: 77 Unnamed: 78 Unnamed: 79 Unnamed: 80 Unnamed: 81 Unnamed: 82 Unnamed: 83 Unnamed: 84 Unnamed: 85 Unnamed: 86 Unnamed: 87 Unnamed: 88 Unnamed: 89 Unnamed: 90 Unnamed: 91 Unnamed: 92 Unnamed: 93 Unnamed: 94 Unnamed: 95 Unnamed: 96 Unnamed: 97 Unnamed: 98 Unnamed: 99 Unnamed: 100 Unnamed: 101 Unnamed: 102 Unnamed: 103 Unnamed: 104 Unnamed: 105 Unnamed: 106 Unnamed: 107 Unnamed: 108 Unnamed: 109 Unnamed: 110 Unnamed: 111 Unnamed: 112 Unnamed: 113 Unnamed: 114 Unnamed: 115 Unnamed: 116 Unnamed: 117 Unnamed: 118 Unnamed: 119 Unnamed: 120 Unnamed: 121 Unnamed: 122 Unnamed: 123 Unnamed: 124 Unnamed: 125 Unnamed: 126 Unnamed: 127 Unnamed: 128 Unnamed: 129 Unnamed: 130 Unnamed: 131 Unnamed: 132 Unnamed: 133 Unnamed: 134 Unnamed: 135 Unnamed: 136 Unnamed: 137 Unnamed: 138 Unnamed: 139 Unnamed: 140 Unnamed: 141 Unnamed: 142 Unnamed: 143 Unnamed: 144 Unnamed: 145 Unnamed: 146 Unnamed: 147 Unnamed: 148 Unnamed: 149 Unnamed: 150 Unnamed: 151 Unnamed: 152 Unnamed: 153 Unnamed: 154 Unnamed: 155 Unnamed: 156 Unnamed: 157 Unnamed: 158 Unnamed: 159 Unnamed: 160 Unnamed: 161 Unnamed: 162 Unnamed: 163 Unnamed: 164 Unnamed: 165 Unnamed: 166 Unnamed: 167 Unnamed: 168 Unnamed: 169 Unnamed: 170 Unnamed: 171 Unnamed: 172 Unnamed: 173 Unnamed: 174 Unnamed: 175 Unnamed: 176 Unnamed: 177 Unnamed: 178 Unnamed: 179 Unnamed: 180 Unnamed: 181 Unnamed: 182 Unnamed: 183 Unnamed: 184 Unnamed: 185 Unnamed: 186 Unnamed: 187 Unnamed: 188 Unnamed: 189 Unnamed: 190 Unnamed: 191 Unnamed: 192 Unnamed: 193 Unnamed: 194 Unnamed: 195 Unnamed: 196 Unnamed: 197 Unnamed: 198 Unnamed: 199 Unnamed: 200 Unnamed: 201 Unnamed: 202 Unnamed: 203 Unnamed: 204 Unnamed: 205 Unnamed: 206 Unnamed: 207 Unnamed: 208 Unnamed: 209 Unnamed: 210 Unnamed: 211 Unnamed: 212 Unnamed: 213 Unnamed: 214 Unnamed: 215 Unnamed: 216 Unnamed: 217 Unnamed: 218 Unnamed: 219 Unnamed: 220 Unnamed: 221 Unnamed: 222 Unnamed: 223 Unnamed: 224 Unnamed: 225 Unnamed: 226 Unnamed: 227 Unnamed: 228 Unnamed: 229 Unnamed: 230 Unnamed: 231 Unnamed: 232 Unnamed: 233 Unnamed: 234 Unnamed: 235 Unnamed: 236 Unnamed: 237 Unnamed: 238 Unnamed: 239 Unnamed: 240 Unnamed: 241 Unnamed: 242 Unnamed: 243 Unnamed: 244 Unnamed: 245 Unnamed: 246 Unnamed: 247 Unnamed: 248 Unnamed: 249 Unnamed: 250 Unnamed: 251 Unnamed: 252 Unnamed: 253 Unnamed: 254 Unnamed: 255 Unnamed: 256 Unnamed: 257 Unnamed: 258 Unnamed: 259 Unnamed: 260 Unnamed: 261 Unnamed: 262 Unnamed: 263 Unnamed: 264 Unnamed: 265 Unnamed: 266 Unnamed: 267 Unnamed: 268 Unnamed: 269 Unnamed: 270 Unnamed: 271 Unnamed: 272 Unnamed: 273 Unnamed: 274 Unnamed: 275 Unnamed: 276 Unnamed: 277 Unnamed: 278 Unnamed: 279 Unnamed: 280 Unnamed: 281 Unnamed: 282 Unnamed: 283 Unnamed: 284 Unnamed: 285 Unnamed: 286 Unnamed: 287 Unnamed: 288 Unnamed: 289 Unnamed: 290 Unnamed: 291 Unnamed: 292 Unnamed: 293 Unnamed: 294 Unnamed: 295 Unnamed: 296 Unnamed: 297 Unnamed: 298 Unnamed: 299 Unnamed: 300 Unnamed: 301 Unnamed: 302 Unnamed: 303 Unnamed: 304 Unnamed: 305 Unnamed: 306 Unnamed: 307 Unnamed: 308 Unnamed: 309 Unnamed: 310 Unnamed: 311 Unnamed: 312 Unnamed: 313 Unnamed: 314 Unnamed: 315 Unnamed: 316 Unnamed: 317 Unnamed: 318 Unnamed: 319 Unnamed: 320 Unnamed: 321 Unnamed: 322 Unnamed: 323 Unnamed: 324 Unnamed: 325 Unnamed: 326 Unnamed: 327 Unnamed: 328 Unnamed: 329 Unnamed: 330 Unnamed: 331 Unnamed: 332 Unnamed: 333 Unnamed: 334 Unnamed: 335 Unnamed: 336 Unnamed: 337 Unnamed: 338 Unnamed: 339 Unnamed: 340 Unnamed: 341 Unnamed: 342 Unnamed: 343 Unnamed: 344 Unnamed: 345 Unnamed: 346 Unnamed: 347 Unnamed: 348 Unnamed: 349 Unnamed: 350 Unnamed: 351 Unnamed: 352 Unnamed: 353 Unnamed: 354 Unnamed: 355 Unnamed: 356 Unnamed: 357 Unnamed: 358 Unnamed: 359 Unnamed: 360 Unnamed: 361 Unnamed: 362 Unnamed: 363 Unnamed: 364
+0  CL.USINE MEKNES         NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN  MT 08 EN 53         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN                       Page: 1         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN
+1               NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN                   Version : A         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN
+2               NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN  Date d'application: 01/01/08         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN
+
+--- Feuille: Feuil2 ---
+Shape: (10, 7)
+Colonnes: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6']
+
+Types:
+Unnamed: 0    float64
+Unnamed: 1    float64
+Unnamed: 2    float64
+Unnamed: 3    float64
+Unnamed: 4    float64
+Unnamed: 5        str
+Unnamed: 6        str
+dtype: object
+
+Aperçu (3 premières lignes):
+   Unnamed: 0  Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4 Unnamed: 5 Unnamed: 6
+0         NaN         NaN         NaN         NaN         NaN        NaN        NaN
+1         NaN         NaN         NaN         NaN    333048.0        NaN        NaN
+2         NaN         NaN         NaN         NaN    328329.0        NaN        NaN
+
+============================================================
+FICHIER: Consommation
+Chemin: c:\Users\Administrateur\Desktop\PFE\CL_EXPORT_ETAT_CONSOMATION3060118986151578542 (1).xls
+Existe: True
+============================================================
+Feuilles: ['Sheet1']
+
+--- Feuille: Sheet1 ---
+Shape: (6818, 17)
+Colonnes: ['Type', 'DateSortie', 'OT', 'Demandeur', 'Article', 'Libelle Article', 'PU', 'Qté', 'Valeur', 'TypeOT', 'Rubrique', 'SA', 'Entité', 'Depot', 'Emplacement', 'Equipement', 'Libelle Equipement']
+
+Types:
+Type                             str
+DateSortie            datetime64[us]
+OT                           float64
+Demandeur                        str
+Article                          str
+Libelle Article                  str
+PU                           float64
+Qté                          float64
+Valeur                       float64
+TypeOT                           str
+Rubrique                         str
+SA                               str
+Entité                         int64
+Depot                          int64
+Emplacement                      str
+Equipement                       str
+Libelle Equipement               str
+dtype: object
+
+Aperçu (3 premières lignes):
+         Type DateSortie        OT  Demandeur Article                        Libelle Article         PU  Qté     Valeur TypeOT Rubrique      SA  Entité  Depot Emplacement   Equipement       Libelle Equipement
+0  SORTIE SMF 2025-08-05  418093.0     HJAMYL  00043S  O-RING 53,70X1,78 MM/ REF 315206-0805    51.7320  1.0    51.7320     CU      U01  04C281     400    430       01B04  CR18000001M  MACHINE TETRA TOP 5 180
+1  SORTIE SMF 2025-11-24  421378.0   AANAJJAR  00226S                    GABARIT REF 1572245  6674.1200  1.0  6674.1200     PS      U01  04C281     400    430       02A04  CR18000002M  MACHINE TETRA TOP 4 180
+2  SORTIE SMF 2025-11-15  423126.0  ABAGHDADI  00344S    SHAFT/2555655-0000 REF 2555655-0000  1045.1056  1.0  1045.1056     PS      U01  04C281     400    430       10A04  CR18000001M  MACHINE TETRA TOP 5 180
+
+Colonnes potentielles de jointure: ['Article', 'Libelle Article']
+
+============================================================
+FICHIER: Liste Controle
+Chemin: c:\Users\Administrateur\Desktop\PFE\LISTE DE CONTRÔLE DISPOSITIF DE SECURITE (1).xlsx
+Existe: True
+============================================================
+Feuilles: ['Feuil1', 'Feuil2', 'Feuil3']
+
+--- Feuille: Feuil1 ---
+Shape: (35, 5)
+Colonnes: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+Types:
+Unnamed: 0    float64
+Unnamed: 1        str
+Unnamed: 2        str
+Unnamed: 3        str
+Unnamed: 4        str
+dtype: object
+
+Aperçu (3 premières lignes):
+   Unnamed: 0                                   Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4
+0         NaN  CHECK LISTE DE CONTRÔLE TECHNIQUE TETRA TOP        NaN        NaN        NaN
+1         NaN                                          NaN        NaN        NaN        NaN
+2         NaN                                          NaN        NaN        NaN        NaN
+
+--- Feuille: Feuil2 ---
+Shape: (0, 0)
+Colonnes: []
+
+Types:
+Series([], dtype: object)
+
+Aperçu (3 premières lignes):
+Empty DataFrame
+Columns: []
+Index: []
+
+Arborescence chargée: 849 lignes, 4 colonnes
+Traceback (most recent call last):
+  File "c:\Users\Administrateur\Desktop\PFE\generate_bom.py", line 192, in <module>
+    tree_df = load_tree_data()
+  File "c:\Users\Administrateur\Desktop\PFE\generate_bom.py", line 77, in load_tree_data
+    print(f"Colonnes: {list(df.columns)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cd' in position 12: character maps to <undefined>
