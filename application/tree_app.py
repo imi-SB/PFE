@@ -80,58 +80,73 @@ class TreeApp:
         self.load_data()
 
     def load_data(self):
-        """Charge les données depuis le fichier Excel s'il existe."""
-        if os.path.exists(EXCEL_FILE):
+        """Charge et affiche tree_data_internal copy.xlsx en reconstruisant la hiérarchie basée sur la colonne Niveau."""
+        import pandas as pd
+        import os
+        BASE_PATH = os.path.dirname(EXCEL_FILE) if os.path.isabs(EXCEL_FILE) else os.getcwd()
+        EXCEL_PATH = os.path.join(BASE_PATH, EXCEL_FILE)
+
+        if os.path.exists(EXCEL_PATH):
             try:
-                df = pd.read_excel(EXCEL_FILE)
-                # Assurons-nous que le fichier n'est pas vide et a les bonnes colonnes (ou compatibles)
-                if not df.empty:
-                    # Nettoyer l'arbre actuel
-                    for item in self.tree.get_children():
-                        self.tree.delete(item)
-                    self.data_store = {}
-
-                    # Convertir le DataFrame en dictionnaire pour un accès rapide
-                    nodes = {}
-                    for index, row in df.iterrows():
-                        node_id = str(row["ID"])
-                        parent_id = str(row["ParentID"]) if "ParentID" in df.columns and pd.notna(row["ParentID"]) else ""
-                        part_number = str(row["PartNumber"]) if "PartNumber" in df.columns else ""
-                        description = str(row["Description"]) if "Description" in df.columns and pd.notna(row["Description"]) else ""
-                        position = str(row["Position"]) if "Position" in df.columns and pd.notna(row["Position"]) else ""
-
-                        nodes[node_id] = {"parent_id": parent_id, "part_number": part_number, "description": description, "position": position}
-
-                    # Reconstruire l'arbre
-                    to_add = list(nodes.keys())
-                    added = set()
-
-                    # On ajoute d'abord les racines (parent_id vide ou non trouvé dans nodes)
-                    for node_id in to_add[:]:
-                        parent_id = nodes[node_id]["parent_id"]
-                        if not parent_id or parent_id not in nodes:
-                            self.insert_node_in_tree("", node_id, nodes[node_id]["position"], nodes[node_id]["part_number"], nodes[node_id]["description"])
-                            self.data_store[node_id] = nodes[node_id]
-                            added.add(node_id)
-                            to_add.remove(node_id)
+                df = pd.read_excel(EXCEL_PATH, skiprows=2)  # Sauter les 2 premières lignes (zone chemin + vide)
+                
+                # Nettoyer les colonnes vides
+                df = df.dropna(how='all', axis=1)
+                df = df.dropna(how='all', axis=0)
+                
+                if df.empty:
+                    messagebox.showwarning("Aucun élément", "Le fichier tree_data_internal copy.xlsx est vide.")
+                    return
+                
+                # Nettoyer l'arbre actuel
+                for item in self.tree.get_children():
+                    self.tree.delete(item)
+                self.data_store = {}
+                
+                # Stack pour garder trace des parents à chaque niveau
+                parent_stack = [""]  # Niveau 0 = racine (parent_id vide)
+                
+                for index, row in df.iterrows():
+                    position = str(row["Position"]) if "Position" in df.columns and pd.notna(row["Position"]) else ""
+                    part_number = str(row["PartNumber"]) if "PartNumber" in df.columns and pd.notna(row["PartNumber"]) else ""
+                    description = str(row["Description"]) if "Description" in df.columns and pd.notna(row["Description"]) else ""
+                    niveau = int(row["Niveau"]) if "Niveau" in df.columns and pd.notna(row["Niveau"]) else 0
                     
-                    # Ensuite on ajoute les enfants itérativement
-                    last_count = len(to_add) + 1
-                    while to_add:
-                        current_count = len(to_add)
-                        if current_count == last_count:
-                            print("Attention: Des orphelins ont été détectés et ignorés.")
-                            break 
-                        last_count = current_count
-
-                        for node_id in to_add[:]:
-                            parent_id = nodes[node_id]["parent_id"]
-                            if parent_id in added:
-                                self.insert_node_in_tree(parent_id, node_id, nodes[node_id]["position"], nodes[node_id]["part_number"], nodes[node_id]["description"])
-                                self.data_store[node_id] = nodes[node_id]
-                                added.add(node_id)
-                                to_add.remove(node_id)
-
+                    if not part_number:
+                        continue
+                    
+                    # Générer un ID unique
+                    node_id = str(uuid.uuid4())
+                    
+                    # Ajuster la stack au niveau actuel
+                    # S'assurer que la stack a la bonne taille
+                    while len(parent_stack) > niveau + 1:
+                        parent_stack.pop()
+                    
+                    # Étendre la stack si nécessaire
+                    while len(parent_stack) <= niveau:
+                        parent_stack.append("")
+                    
+                    # Le parent est l'élément au niveau précédent
+                    parent_id = parent_stack[niveau] if niveau < len(parent_stack) else ""
+                    
+                    # Insérer dans l'arbre
+                    self.insert_node_in_tree(parent_id, node_id, position, part_number, description)
+                    
+                    # Stocker les données
+                    self.data_store[node_id] = {
+                        "parent_id": parent_id,
+                        "position": position,
+                        "part_number": part_number,
+                        "description": description
+                    }
+                    
+                    # Mettre à jour la stack pour ce niveau
+                    if len(parent_stack) <= niveau + 1:
+                        parent_stack.append(node_id)
+                    else:
+                        parent_stack[niveau + 1] = node_id
+                        
             except Exception as e:
                 messagebox.showerror("Erreur de chargement", f"Impossible de charger le fichier Excel:\n{e}")
 
