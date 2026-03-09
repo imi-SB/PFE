@@ -25,6 +25,11 @@ class TreeApp:
         tk.Button(button_frame, text="Modifier", command=self.edit_node).pack(side=tk.LEFT, padx=5)
         tk.Button(button_frame, text="Supprimer", command=self.delete_node).pack(side=tk.LEFT, padx=5)
         tk.Button(button_frame, text="Sauvegarder", command=self.save_data).pack(side=tk.RIGHT, padx=5)
+        
+        # Boutons Copier/Coller
+        tk.Button(button_frame, text="Copier Branche", command=self.copy_node).pack(side=tk.LEFT, padx=5)
+        self.btn_paste = tk.Button(button_frame, text="Coller Branche", command=self.paste_node, state=tk.DISABLED)
+        self.btn_paste.pack(side=tk.LEFT, padx=5)
 
         # ====== Cadre du Fil d'Ariane (Breadcrumb) ======
         breadcrumb_outer_frame = tk.Frame(self.root, bg="#f0f0f0", relief=tk.GROOVE, borderwidth=1)
@@ -64,6 +69,9 @@ class TreeApp:
 
         # Dictionnaire pour stocker les données en mémoire (id -> {parent_id, position, part_number, description})
         self.data_store = {}
+        
+        # Presse-papiers pour copier/coller des branches
+        self.clipboard = None
 
         # Liaison de l'événement de sélection pour mettre à jour le breadcrumb
         self.tree.bind("<<TreeviewSelect>>", self.on_tree_select)
@@ -735,6 +743,77 @@ class TreeApp:
         # Si le noeud existe encore dans l'arbre (c'est la racine de la suppression), on le supprime
         if self.tree.exists(node_id):
             self.tree.delete(node_id)
+
+    def copy_node(self):
+        """Copie le noeud sélectionné et toute sa descendance dans le presse-papiers."""
+        selected_item = self.tree.selection()
+        if not selected_item:
+            messagebox.showwarning("Sélection requise", "Veuillez sélectionner un noeud à copier.")
+            return
+        
+        node_id = selected_item[0]
+        
+        # Fonction récursive pour construire la structure de données de la branche
+        def build_subtree(current_id):
+            node_data = self.data_store.get(current_id).copy()
+            # On ne garde pas l'ID ni le parent_id car ils changeront au collage
+            # Mais on garde les données pour les recréer
+            
+            children = [k for k, v in self.data_store.items() if v["parent_id"] == current_id]
+            children_data = []
+            for child_id in children:
+                children_data.append(build_subtree(child_id))
+            
+            return {
+                "data": node_data,
+                "children": children_data
+            }
+            
+        self.clipboard = build_subtree(node_id)
+        self.btn_paste.config(state=tk.NORMAL)
+        messagebox.showinfo("Copié", "Branche copiée dans le presse-papiers.")
+
+    def paste_node(self):
+        """Colle le contenu du presse-papiers sous le noeud sélectionné."""
+        if not self.clipboard:
+            messagebox.showwarning("Presse-papiers vide", "Rien à coller.")
+            return
+
+        selected_item = self.tree.selection()
+        if not selected_item:
+            messagebox.showwarning("Sélection requise", "Veuillez sélectionner un parent pour coller.")
+            return
+        
+        parent_id = selected_item[0]
+        
+        # Fonction récursive pour recréer les noeuds
+        def recreate_subtree(subtree_structure, current_parent_id):
+            node_data = subtree_structure["data"]
+            
+            new_id = str(uuid.uuid4())
+            position = node_data.get("position", "")
+            part_number = node_data.get("part_number", "")
+            description = node_data.get("description", "")
+            
+            # Insérer dans l'arbre et le data_store
+            self.insert_node_in_tree(current_parent_id, new_id, position, part_number, description)
+            self.data_store[new_id] = {
+                "parent_id": current_parent_id,
+                "position": position,
+                "part_number": part_number,
+                "description": description
+            }
+            
+            # Gérer les enfants
+            for child_struct in subtree_structure["children"]:
+                recreate_subtree(child_struct, new_id)
+                
+        try:
+            recreate_subtree(self.clipboard, parent_id)
+            self.save_data()
+            messagebox.showinfo("Succès", "Branche collée avec succès. Les enfants ont été clonés.")
+        except Exception as e:
+            messagebox.showerror("Erreur", f"Erreur lors du collage : {e}")
 
 if __name__ == "__main__":
     # Vérification des dépendances au lancement
