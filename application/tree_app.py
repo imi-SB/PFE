@@ -107,8 +107,8 @@ class TreeApp:
                 parent_stack = [""]  # Niveau 0 = racine (parent_id vide)
                 
                 for index, row in df.iterrows():
-                    position = str(row["Position"]) if "Position" in df.columns and pd.notna(row["Position"]) else ""
-                    part_number = str(row["PartNumber"]) if "PartNumber" in df.columns and pd.notna(row["PartNumber"]) else ""
+                    position = str(row["Position"]) if "Position" in df.columns and pd.notna(row["Position"]) else "nan"
+                    part_number = str(row["PartNumber"]) if "PartNumber" in df.columns and pd.notna(row["PartNumber"]) else "nan"
                     description = str(row["Description"]) if "Description" in df.columns and pd.notna(row["Description"]) else ""
                     niveau = int(row["Niveau"]) if "Niveau" in df.columns and pd.notna(row["Niveau"]) else 0
                     
@@ -309,9 +309,18 @@ class TreeApp:
                 node_data = self.data_store[child_id]
                 # Générer le chemin lisible (stocké pour les commentaires Excel)
                 chemin = self.get_path_string(child_id)
+                
+                # Convertir "nan" en None pour affichage vide dans Excel
+                position = node_data.get("position", "")
+                if position == "nan":
+                    position = None
+                part_number = node_data["part_number"]
+                if part_number == "nan":
+                    part_number = None
+                
                 export_data.append({
-                    "Position": node_data.get("position", ""),
-                    "PartNumber": node_data["part_number"],
+                    "Position": position,
+                    "PartNumber": part_number,
                     "Description": node_data["description"],
                     "Niveau": level,
                     "_Level": level,
@@ -630,16 +639,20 @@ class TreeApp:
                     if not line: continue
                     try:
                         # 1. Extraction Position
-                        position = ""
+                        position = "nan"
                         if len(line) > pos_start:
                             current_pos_end = min(len(line), pos_end)
-                            position = line[pos_start:current_pos_end].strip()
+                            extracted_pos = line[pos_start:current_pos_end].strip()
+                            if extracted_pos:
+                                position = extracted_pos
 
                         # 2. Extraction Part Number - Condition critique
                         if len(line) <= pn_start: continue 
                         
                         current_pn_end = min(len(line), pn_end)
                         part_number = line[pn_start:current_pn_end].strip()
+                        if not part_number:
+                            part_number = "nan"
                         
                         # 3. Extraction Description
                         description = ""
@@ -675,11 +688,12 @@ class TreeApp:
     def prompt_and_add_node(self, parent_id):
         # Dialogue pour Position
         position = simpledialog.askstring("Nouveau Noeud", "Entrez la Position (Optionnel):", initialvalue="")
-        if position is None: position = ""
+        if position is None or position.strip() == "": position = "nan"
 
         # Dialogue pour Part Number
         part_number = simpledialog.askstring("Nouveau Noeud", "Entrez le Part Number:")
         if part_number is None: return # Annulé
+        if part_number.strip() == "": part_number = "nan"
 
         # Dialogue pour Description
         description = simpledialog.askstring("Nouveau Noeud", "Entrez la Description:")
@@ -711,11 +725,13 @@ class TreeApp:
         current_data = self.data_store.get(node_id)
         if not current_data: return 
 
-        new_pos = simpledialog.askstring("Modifier", "Modifier Position:", initialvalue=current_data.get("position", ""))
+        new_pos = simpledialog.askstring("Modifier", "Modifier Position:", initialvalue=current_data.get("position", "nan"))
         if new_pos is None: return
+        if new_pos.strip() == "": new_pos = "nan"
 
         new_pn = simpledialog.askstring("Modifier", "Modifier Part Number:", initialvalue=current_data["part_number"])
         if new_pn is None: return
+        if new_pn.strip() == "": new_pn = "nan"
 
         new_desc = simpledialog.askstring("Modifier", "Modifier Description:", initialvalue=current_data["description"])
         if new_desc is None: return
